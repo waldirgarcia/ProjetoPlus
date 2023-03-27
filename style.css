@@ -230,7 +230,7 @@ display: block;
 }
 
 .descricao__titulo{
-    width:50vw;
+    
     font-size: 30px;
     text-align: center;
     padding: 1px;
@@ -239,8 +239,7 @@ display: block;
 }
 
 .descricao__texto{
-   display: block;
-   align-items: center;
+   margin-top: 15px;
 
 }
 
@@ -259,6 +258,11 @@ display: block;
 
 .segundario__imagem{
     padding: 15px;
+}
+
+.dispositivos{
+ font-size: 32px;
+
 }
 
 
