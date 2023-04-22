@@ -124,7 +124,7 @@ font-size: var(--fonte-principal);
    padding: 2em;
 }
 .lista__item{
-    display: flex;
+     display: flex;
     justify-content: center;
     font-size: 32;
     color: var(--branco-principal);
@@ -132,7 +132,7 @@ font-size: var(--fonte-principal);
 }
 
 .lista__link{
-    display: inline-block;
+       display: inline-block;
     text-align: center;
     margin-left: 1em;
     grid-template-columns: 50%;
@@ -182,88 +182,59 @@ font-size: var(--fonte-principal);
     background-color: var(--botao-azul-efeito);
     color:var(--cor-de-fundo);
 }
-
-
 @media screen and (max-width: 768px) {
- .container{
-    display:block;
-    background-image: none;
-
- }
-
- .container__imagem{
-    width:50vw;
-    align-items: center;
-
- }
-
-.container__caixa{
-    margin: 2em 2em;
-}
-
-.secundario{
-    margin: 0;
-    text-align: center;
-}
-
-.secundario__imagem{
- width: 50vw;
-
-}
-.dispositivos__lista{
-display: block;
-
-}
-
-.lista__link{
-    display: block;
-}
-
-.container__aviso{
-    margin: 0;
-    text-align: center;
-}
-
-.container__secundario{
-    margin-top: 30px;
-    margin-left: 35px;
-}
-
-.descricao__titulo{
-    
-    font-size: 30px;
-    text-align: center;
-    padding: 1px;
-
-
-}
-
-.descricao__texto{
-   margin-top: 15px;
-
-}
-
-.container__imagem{
-    display: flex;
+    .container {
+      grid-template-columns: 100%; /* Altera a disposição dos elementos para uma coluna */
+      padding: 1em;
+    }
   
-}
-
-.container__titulo{
-     padding: 2px;
-
-}
-.containe__botao{
-    margin-top: 12px;
-}
-
-.segundario__imagem{
-    padding: 15px;
-}
-
-.dispositivos{
- font-size: 32px;
-
-}
-
-
-}
+    .container__imagem {
+      width: 100%; /* Define a largura da imagem para ocupar todo o espaço disponível */
+      margin-bottom: 1em;
+    }
+  
+    .container__caixa {
+      margin: 1em 0;
+      font-size: 14px; /* Diminui o tamanho da fonte para melhor legibilidade em telas menores */
+    }
+  
+    .secundario {
+      margin: 0;
+      text-align: center;
+    }
+  
+    .secundario__imagem {
+      width: 100%; /* Define a largura da imagem para ocupar todo o espaço disponível */
+      margin-bottom: 1em;
+    }
+  
+    .descricao__titulo {
+      font-size: 24px; /* Diminui o tamanho da fonte para melhor legibilidade em telas menores */
+      margin-bottom: 0.5em;
+    }
+  
+    .descricao__texto {
+      font-size: 14px; /* Diminui o tamanho da fonte para melhor legibilidade em telas menores */
+    }
+  
+    .dispositivos__lista {
+      display: flex;
+      flex-wrap: wrap; /* Permite que a lista se ajuste em várias linhas */
+      justify-content: center;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+  
+    .lista__item {
+      flex-basis: calc(33.33% - 1em); /* Divide a lista em 3 colunas com margem à esquerda e à direita */
+      margin: 0.5em;
+      font-size: 14px; /* Diminui o tamanho da fonte para melhor legibilidade em telas menores */
+    }
+  
+    .lista__link {
+      display: block;
+      margin-top: 0.5em;
+      padding: 0.5em;
+      font-size: 14px; /* Diminui o tamanho da fonte para melhor legibilidade em telas menores */
+    }
+  }
